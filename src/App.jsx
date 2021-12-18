@@ -18,6 +18,7 @@ import NativeBalance from "components/NativeBalance";
 import "./style.css";
 import Text from "antd/lib/typography/Text";
 import NFTMarketTransactions from "components/NFTMarketTransactions";
+import background from "./1129018.jpg";
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -64,7 +65,7 @@ const App = ({ isServerInfo }) => {
   }, [isAuthenticated, isWeb3Enabled]);
 
   return (
-    <Layout style={{ height: "100vh", overflow: "auto" }}>
+    <Layout style={{ height: "100vh", overflow: "auto" }} style={{ backgroundImage: `url(${background})` }}>
       <Router>
         <Header style={styles.header}>
           <Logo />
@@ -109,7 +110,7 @@ const App = ({ isServerInfo }) => {
               <NFTMarketTransactions />
             </Route>
           </Switch>
-          <Redirect to="/NFTMarketPlace" />
+          <Redirect to="/NFTBalance" />
         </div>
       </Router>
       <Footer style={{ textAlign: "center" }}>
