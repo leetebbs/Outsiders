@@ -26,6 +26,17 @@ npm start dev
 ## Name
 Outsiders NFT marketplace Built for the Moralis Avalanche Hackathon 21/22.
 
+## Ideas for improving Dapp. 
+cancel sale functionality
+create a logo
+design frontpage and website design
+minting functionality (lazy minitnig or chage a fee?)
+make an offer if item is not for sale
+display details for nft when clicked on in modal ??? name attributes etc
+add collection when nft holder logs in with wallet (get collection address and add to collections).
+add fee to listing functionality
+
+
 ## Description
 NFT Marketplace on the Avalanche Fuji Testnet.
 Buy and Sell NFTs.
@@ -33,6 +44,8 @@ Buy and Sell NFTs.
 Get test NFTS here : https://rebelcrypto.nl/cryptodevsavax/
 
 Marketplace Contract Address  0xAd1d1530525d1427cEDEE538132E93b231512c02 on the Avalanche Fuji Testnet
+
+Video I followed  https://www.youtube.com/watch?v=WZWCzsB1xUE to get it working.
 
 ## Visuals
 Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
@@ -83,3 +96,5 @@ Marketplace Contract Address  0xAd1d1530525d1427cEDEE538132E93b231512c02 on the 
 
 To Mint Test NFTs for this project i have made a minting dapp on the Fuji Testnet here:
 https://rebelcrypto.nl/cryptodevsavax/
+
+video https://www.youtube.com/watch?v=WZWCzsB1xUE
