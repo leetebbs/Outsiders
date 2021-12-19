@@ -23,6 +23,10 @@ Run Development server:
 
 npm start dev
 
+## Todo
+
+Create watch and sync function on server  CreateMarketItems
+
 ## Name
 Outsiders NFT marketplace Built for the Moralis Avalanche Hackathon 21/22.
 
