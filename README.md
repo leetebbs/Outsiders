@@ -32,12 +32,19 @@ Outsiders NFT marketplace Built for the Moralis Avalanche Hackathon 21/22.
 
 ## Ideas for improving Dapp. 
 cancel sale functionality
+
 create a logo
+
 design frontpage and website design
+
 minting functionality (lazy minitnig or chage a fee?)
+
 make an offer if item is not for sale
+
 display details for nft when clicked on in modal ??? name attributes etc
+
 add collection when nft holder logs in with wallet (get collection address and add to collections).
+
 add fee to listing functionality
 
 
