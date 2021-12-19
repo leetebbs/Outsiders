@@ -6,7 +6,17 @@ export const networkCollections = {
         "https://gateway.ipfs.io/ipfs/QmRG7cGWQehPhBGYDLbJhJvRMaM3A3jXSRMeosEZaN73bD/15.png",
       name: "Crypto Devs",
       addrs: "0xac9942c40E4eDdC0B77e9e18540e4366Bb233F8d",
+     
     },
+
+    {
+      image:
+        "https://gateway.ipfs.io/ipfs/QmRG7cGWQehPhBGYDLbJhJvRMaM3A3jXSRMeosEZaN73bD/15.png",
+      name: "Other Collection",
+      addrs: "0x33AEbBF9a6Cc2aa385095149A06219B6728b0D02",
+      
+    },
+
 
   ],
 
@@ -14,9 +24,9 @@ export const networkCollections = {
     //Avalanche testnet
     {
       image:
-        "https://gateway.ipfs.io/ipfs/QmRG7cGWQehPhBGYDLbJhJvRMaM3A3jXSRMeosEZaN73bD/383.png",
-      name: "Outsiders Test Collection",
-      addrs: "0x9ABF023631108AD4C246B00EF042E3B5A980c851",
+        "https://web3.moralis.io/hosted/images/be/c567287d0d420d95b717615614a1c9/20_11_Ivan-Circle-2.png",
+      name: "Outsiders Test Collection Avax Test",
+      addrs: "0x9abf023631108ad4c246b00ef042e3b5a980c851",
     },
 
   ],

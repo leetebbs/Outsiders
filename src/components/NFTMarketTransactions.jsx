@@ -25,7 +25,7 @@ function NFTMarketTransactions() {
       "description",
     ])
   );
-  const queryMarketItems = useMoralisQuery("MarketItems");
+  const queryMarketItems = useMoralisQuery("CreatedMarketItems");
   const fetchMarketItems = JSON.parse(
     JSON.stringify(queryMarketItems.data, [
       "updatedAt",
