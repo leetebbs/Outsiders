@@ -86,36 +86,44 @@ function NFTTokenIds({ inputValue, setInputValue }) {
   const purchaseItemFunction = "createMarketSale";
   const NFTCollections = getCollectionsByChain(chainId);
 
-  async function purchase() {
-    setLoading(true);
-    const tokenDetails = getMarketItem(nftToBuy);
-    const itemID = tokenDetails.itemId;
-    const tokenPrice = tokenDetails.price;
-    const ops = {
-      contractAddress: marketAddress,
-      functionName: purchaseItemFunction,
-      abi: contractABIJson,
-      params: {
-        nftContract: nftToBuy.token_address,
-        itemId: itemID,
-      },
-      msgValue: tokenPrice,
-    };
 
-    await contractProcessor.fetch({
-      params: ops,
-      onSuccess: () => {
-        console.log("success");
-        setLoading(false);
-        setVisibility(false);
-        updateSoldMarketItem();
-        succPurchase();
-      },
-      onError: (error) => {
-        setLoading(false);
-        failPurchase();
-      },
-    });
+  async function purchase() {
+    let newitems= fetchMarketItems[0];
+    console.log(walletAddress);
+    console.log("should return here...", newitems.seller);
+    if (walletAddress !== newitems.seller){
+      setLoading(true);
+      const tokenDetails = getMarketItem(nftToBuy);
+      const itemID = tokenDetails.itemId;
+      const tokenPrice = tokenDetails.price;
+      const ops = {
+        contractAddress: marketAddress,
+        functionName: purchaseItemFunction,
+        abi: contractABIJson,
+        params: {
+          nftContract: nftToBuy.token_address,
+          itemId: itemID,
+        },
+        msgValue: tokenPrice,
+      };
+
+      await contractProcessor.fetch({
+        params: ops,
+        onSuccess: () => {
+          console.log("success");
+          setLoading(false);
+          setVisibility(false);
+          updateSoldMarketItem();
+          succPurchase();
+        },
+        onError: (error) => {
+          setLoading(false);
+          failPurchase();
+        },
+      });
+    }else{
+    alert("You already own this NFT!");
+    };
   }
 
   const handleBuyClick = (nft) => {
@@ -145,7 +153,7 @@ function NFTTokenIds({ inputValue, setInputValue }) {
       modal.destroy();
     }, secondsToGo * 1000);
   }
-
+// updates moralis server database in the createdmarketitems columb
   async function updateSoldMarketItem() {
     const id = getMarketItem(nftToBuy).objectId;
     const marketList = Moralis.Object.extend("CreatedMarketItems");
