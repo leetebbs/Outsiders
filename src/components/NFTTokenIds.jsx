@@ -296,13 +296,16 @@ function NFTTokenIds({ inputValue, setInputValue }) {
                     style={{ height: "240px" }}
                     
                   />
+                  
                 }
                 key={index}
+                
               >
                 {getMarketItem(nft) && (
                   <Badge.Ribbon text="Buy Now" color="green"></Badge.Ribbon>
                 )}
                 <Meta title={nft.name} description={`#${nft.token_id}`} />
+                <Meta description="This is the description" />
               </Card>
             ))}
         </div>

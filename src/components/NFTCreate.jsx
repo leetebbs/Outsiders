@@ -2,28 +2,23 @@ import React from "react";
 import { Card, Image, Tooltip, Modal, TextArea, Input, Button } from "antd";
 import { useMoralis } from "react-moralis";
 
+
 const styles = {
   card: {
-    width: "25%",
+    width: "50%",
     boxShadow: "0 0.5rem 1.2rem rgb(189 197 209 / 20%)",
     border: "1px solid #e7eaf3",
     borderRadius: "0.5rem",
-    justifyContent: "space-between",
+    justifyContent: "center",
     alignItems: "center",
   },
 };
 
+
+
 function CreateNFT() {
   const { Moralis, web3 } = useMoralis();
-
-  let nftContractAddress = "0x55c30B939AEDe26401e4169973469bc06cc7F42a"; // Make this variable
-
-  // Ethereum Rinkeby 0x0Fb6EF3505b9c52Ed39595433a21aF9B5FCc4431
-  // Polygon Mumbai 0x351bbee7C6E9268A1BF741B098448477E08A0a53
-  // BSC Testnet 0x88624DD1c725C6A95E223170fa99ddB22E1C6DDD
-
-  // choose value as per dragdrop
-
+  let nftContractAddress = "0x55c30B939AEDe26401e4169973469bc06cc7F42a"; // avax testnet address
   const minting = async () => {
     // Storing the file
 
@@ -44,14 +39,29 @@ function CreateNFT() {
       base64: btoa(JSON.stringify(metadata)),
     });
     await metadataFile.saveIPFS().then((result) => {
-      alert("Metadata saved successfully");
+        let secondsToGo = 5;
+        const modal = Modal.success({
+          title: "Success!",
+          content: `Metadata saved successfully!`,
+        });
+        setTimeout(() => {
+          modal.destroy();
+        }, secondsToGo * 1000);
+      
     });
     const metadataURI = metadataFile.ipfs();
     console.log(metadataURI);
 
     // minting
     await mintToken(metadataURI).then((result) => {
-      alert("Token minting transaction sent successfully !!");
+      let secondsToGo = 5;
+      const modal = Modal.success({
+        title: "Success!",
+        content: `Token minting sent successfully!`,
+      });
+      setTimeout(() => {
+        modal.destroy();
+      }, secondsToGo * 1000);
     });
   };
 
@@ -91,20 +101,23 @@ function CreateNFT() {
         display: "flex",
         flexDirection: "column",
         flexWrap: "wrap",
-        justifyContent: "space-between",
+        justifyContent: "center",
         alignItems: "center",
       }}
     >
       <Card
         style={styles.card}
         bodyStyle={{ padding: "18px" }}
-        title={<div>NFT Minter</div>}
+        title={<div>CREATE A NFT</div>}
         size="large"
       >
-        Create Yor own NFT.
+        Details:
         <br />
         <br></br>
-        <img src="imageFile" alt="" />
+        <div class="image-preview" id= "imagePreview">
+          <span class="default-txt">Image Preview</span>
+          <Image src=""  alt= "Image Preview" class = "preview-image"/>
+        </div>
         <Input
           type="text"
           name="metadataName"
@@ -133,10 +146,12 @@ function CreateNFT() {
         <br />
         <br />
         <br />
-        <Button onClick={minting}>Mint</Button>
+        <Button type="primary" onClick={minting}>Mint</Button>
       </Card>
+      
     </div>
   );
 }
+
 
 export default CreateNFT;
