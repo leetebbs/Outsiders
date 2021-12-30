@@ -26,6 +26,7 @@ const styles = {
     justifyContent: "flex-start",
     margin: "0 auto",
     maxWidth: "1000px",
+    borderRadius: "10px",
     gap: "10px",
   },
   banner: {
@@ -122,7 +123,14 @@ function NFTTokenIds({ inputValue, setInputValue }) {
         },
       });
     }else{
-    alert("You already own this NFT!");
+    let secondsToGo = 5;
+    const modal = Modal.error({
+      title: "Error!",
+      content: `You already own this NFT!`,
+    });
+    setTimeout(() => {
+      modal.destroy();
+    }, secondsToGo * 1000);
     };
   }
 
@@ -213,11 +221,13 @@ function NFTTokenIds({ inputValue, setInputValue }) {
               />
               <div style={styles.text}>
                 <>
-                  <div>{`${NFTTokenIds[0]?.name}`}</div>
+                  <div>
+                    
+                    {`${NFTTokenIds[0]?.name}`}</div>
                   <div
                     style={{
                       fontSize: "15px",
-                      color: "#9c9c9c",
+                      color: "#ffffff",
                       fontWeight: "normal",
                     }}
                   >
@@ -276,7 +286,7 @@ function NFTTokenIds({ inputValue, setInputValue }) {
                     <ShoppingCartOutlined onClick={() => handleBuyClick(nft)} />
                   </Tooltip>,
                 ]}
-                style={{ width: 240, border: "2px solid #e7eaf3" }}
+                style={{ width: 240, border: "5px solid #e7eaf3" }}
                 cover={
                   <Image
                     preview={false}
@@ -284,6 +294,7 @@ function NFTTokenIds({ inputValue, setInputValue }) {
                     fallback={fallbackImg}
                     alt=""
                     style={{ height: "240px" }}
+                    
                   />
                 }
                 key={index}

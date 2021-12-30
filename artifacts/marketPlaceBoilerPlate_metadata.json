@@ -196,7 +196,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"src\\contracts\\marketplaceBoilerplate.sol": "marketPlaceBoilerPlate"
+			"contracts\\marketPlaceBoilerPlate.sol": "marketPlaceBoilerPlate"
 		},
 		"evmVersion": "berlin",
 		"libraries": {},
@@ -210,6 +210,14 @@
 		"remappings": []
 	},
 	"sources": {
+		"contracts\\marketPlaceBoilerPlate.sol": {
+			"keccak256": "0xd267866aecd2aa385556d52808205bc6f480d0f6761ccae73363c1fce340c754",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://54ebed7e686801ce9e70138c0602d52d86439a8c43b2f2e3d8d9b9b0ca0abd63",
+				"dweb:/ipfs/QmQsWGFK4ro3XKShBg7ikLN19zNEMjjreFehGosK3N6osa"
+			]
+		},
 		"github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/security/ReentrancyGuard.sol": {
 			"keccak256": "0x0e9621f60b2faabe65549f7ed0f24e8853a45c1b7990d47e8160e523683f3935",
 			"license": "MIT",
@@ -296,14 +304,6 @@
 			"urls": [
 				"bzz-raw://be161e54f24e5c6fae81a12db1a8ae87bc5ae1b0ddc805d82a1440a68455088f",
 				"dweb:/ipfs/QmP7C3CHdY9urF4dEMb9wmsp1wMxHF6nhA2yQE5SKiPAdy"
-			]
-		},
-		"src\\contracts\\marketplaceBoilerplate.sol": {
-			"keccak256": "0xd267866aecd2aa385556d52808205bc6f480d0f6761ccae73363c1fce340c754",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://54ebed7e686801ce9e70138c0602d52d86439a8c43b2f2e3d8d9b9b0ca0abd63",
-				"dweb:/ipfs/QmQsWGFK4ro3XKShBg7ikLN19zNEMjjreFehGosK3N6osa"
 			]
 		}
 	},

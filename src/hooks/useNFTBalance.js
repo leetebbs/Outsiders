@@ -15,6 +15,7 @@ export const useNFTBalance = (options) => {
     isLoading,
   } = useMoralisWeb3ApiCall(account.getNFTs, { chain: chainId, ...options });
   const [fetchSuccess, setFetchSuccess] = useState(true);
+  
 
   useEffect(async () => {
     if (data?.result) {
@@ -40,7 +41,7 @@ export const useNFTBalance = (options) => {
             Remove comments :)
 
               try {
-                await fetch(`<your url here>/${NFT.token_uri}`)
+                await fetch(`https://git.heroku.com/nameless-bastion-69437.git/${NFT.token_uri}`)
                 .then(response => response.json())
                 .then(data => {
                   NFT.image = resolveLink(data.image);
@@ -48,8 +49,8 @@ export const useNFTBalance = (options) => {
               } catch (error) {
                 setFetchSuccess(false);
               }
-
- */
+*/
+ 
           }
         }
       }

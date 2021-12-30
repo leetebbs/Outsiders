@@ -34,6 +34,7 @@ function NFTBalance() {
   const ItemImage = Moralis.Object.extend("ItemImages");
 
   async function list(nft, listPrice) {
+
     setLoading(true);
     const p = listPrice * ("1e" + 18);
     const ops = {
@@ -238,7 +239,7 @@ function NFTBalance() {
           />
           <Input
             autoFocus
-            placeholder="Listing Price in MATIC"
+            placeholder="Listing Price in AVAX"
             onChange={(e) => setPrice(e.target.value)}
           />
         </Spin>

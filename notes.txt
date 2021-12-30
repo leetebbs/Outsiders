@@ -1,0 +1,3 @@
+changed explore market page from displaying 10 images to "".
+ in useNFTTokenIds.js on line 24 (limit: 10)
+ added nft minting contract and dapp.

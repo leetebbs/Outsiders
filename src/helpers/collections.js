@@ -1,11 +1,24 @@
 export const networkCollections = {
+
+  "ganache":
+   //"Local Chain"
+  {
+    image:
+    "https://gateway.ipfs.io/ipfs/QmRG7cGWQehPhBGYDLbJhJvRMaM3A3jXSRMeosEZaN73bD/15.png",
+  name: "Crypto Devs",
+  addrs: "0xF13AbF133559069671aA7A53efD748c4745376B8",
+  },
+ 
+
+
+
   "0x13881": [
     //Add Your Collections here
     {
       image:
         "https://gateway.ipfs.io/ipfs/QmRG7cGWQehPhBGYDLbJhJvRMaM3A3jXSRMeosEZaN73bD/15.png",
-      name: "Crypto Devs",
-      addrs: "0xac9942c40E4eDdC0B77e9e18540e4366Bb233F8d",
+      name: "mumbai test",
+      addrs: "0x351bbee7C6E9268A1BF741B098448477E08A0a53",
      
     },
 
@@ -28,6 +41,13 @@ export const networkCollections = {
       name: "Outsiders Test Collection Avax Test",
       addrs: "0x9abf023631108ad4c246b00ef042e3b5a980c851",
     },
+
+    {
+      image:
+      "https://ipfs.moralis.io:2053/ipfs/QmeTseSsgWXRuYVUcG5FvhAXSWgddsaCLZdFyNEgJaHa32",
+      name: "Our NFT Factory",
+      addrs: "0x55c30B939AEDe26401e4169973469bc06cc7F42a",
+    }
 
   ],
 
