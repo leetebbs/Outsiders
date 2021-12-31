@@ -19,8 +19,10 @@ import "./style.css";
 import Text from "antd/lib/typography/Text";
 import NFTMarketTransactions from "components/NFTMarketTransactions";
 import NFTCreate from "components/NFTCreate";
+import Home from "components/Home";
 import background from "./1129018.jpg";
 const { Header, Footer } = Layout;
+document.body.style.backgroundColor = "#808080";
 
 const styles = {
   content: {
@@ -28,14 +30,14 @@ const styles = {
     justifyContent: "center",
     fontFamily: "Roboto, sans-serif",
     color: "#041836",
-    marginTop: "130px",
-    padding: "10px",
+    marginTop: "50px",
+    padding: "100px",
   },
   header: {
     position: "fixed",
     zIndex: 1,
     width: "100%",
-    background: "#fff",
+    background: "#808080",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
@@ -50,6 +52,7 @@ const styles = {
     alignItems: "center",
     fontSize: "15px",
     fontWeight: "600",
+    background: "#808080",
   },
 };
 const App = ({ isServerInfo }) => {
@@ -80,20 +83,26 @@ const App = ({ isServerInfo }) => {
               fontWeight: "500",
               marginLeft: "50px",
               width: "100%",
+              background: "#808080",
             }}
-            defaultSelectedKeys={["nft"]}
-          >
+            defaultSelectedKeys={["home"]}
+
+          > 
+
+            <Menu.Item key="home">
+              <NavLink to="/Home">✨ Home</NavLink>
+            </Menu.Item>
             <Menu.Item key="nftMarket" onClick={() => setInputValue("explore")} >
-              <NavLink to="/NFTMarketPlace">🛒 Explore Market</NavLink>
+              <NavLink to="/NFTMarketPlace">🛒 Collections</NavLink>
+            </Menu.Item>
+            <Menu.Item key="create">
+              <NavLink to="/create">👍 Create</NavLink>
             </Menu.Item>
             <Menu.Item key="nft">
               <NavLink to="/nftBalance">✨ Your Collection</NavLink>
             </Menu.Item>
             <Menu.Item key="transactions">
               <NavLink to="/Transactions">📑 Your Transactions</NavLink>
-            </Menu.Item>
-            <Menu.Item key="create">
-              <NavLink to="/create">👍 Create</NavLink>
             </Menu.Item>
           </Menu>
           <div style={styles.headerRight}>
@@ -116,11 +125,14 @@ const App = ({ isServerInfo }) => {
             <Route path="/create">
               <NFTCreate />
             </Route>
+            <Route path="/home">
+              <Home />
+            </Route>
           </Switch>
-          <Redirect to="/NFTBalance" />
+          <Redirect to="/Home" />
         </div>
       </Router>
-      <Footer style={{ textAlign: "center" }}>
+      <Footer style={{ textAlign: "center",background: "#808080", }}>
         <Text style={{ display: "block" }}>
         🌈 Built For the Avalache Moralis Hackathon{" "}
           <a

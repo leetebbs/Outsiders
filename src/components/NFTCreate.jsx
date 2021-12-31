@@ -1,6 +1,8 @@
 import React from "react";
 import { Card, Image, Tooltip, Modal, TextArea, Input, Button } from "antd";
 import { useMoralis } from "react-moralis";
+import Preview from "./preview";
+
 
 
 const styles = {
@@ -13,7 +15,6 @@ const styles = {
     alignItems: "center",
   },
 };
-
 
 
 function CreateNFT() {
@@ -114,10 +115,6 @@ function CreateNFT() {
         Details:
         <br />
         <br></br>
-        <div class="image-preview" id= "imagePreview">
-          <span class="default-txt">Image Preview</span>
-          <Image src=""  alt= "Image Preview" class = "preview-image"/>
-        </div>
         <Input
           type="text"
           name="metadataName"
@@ -142,7 +139,7 @@ function CreateNFT() {
         />
         <br />
         <br />
-        <Input type="file" name="fileInput" id="file" placeholder="File" />
+        <Preview />
         <br />
         <br />
         <br />

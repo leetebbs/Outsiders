@@ -19,8 +19,6 @@ export const useNFTTokenIds = (addr) => {
   } = useMoralisWeb3ApiCall(token.getAllTokenIds, {
     chain: chainId,
     address: addr,
-    //address: "0xb47e3cd837dDF8e4c57F05d70Ab865de6e193BBB" ,//addr,
-    //address: "0xef764bac8a438e7e498c2e5fccf0f174c3e3f8db",
     limit: "", // how many show on the screen in the market place was 10.
   });
 

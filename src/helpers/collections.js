@@ -37,7 +37,7 @@ export const networkCollections = {
     //Avalanche testnet
     {
       image:
-        "https://web3.moralis.io/hosted/images/be/c567287d0d420d95b717615614a1c9/20_11_Ivan-Circle-2.png",
+        "https://gateway.ipfs.io/ipfs/QmRG7cGWQehPhBGYDLbJhJvRMaM3A3jXSRMeosEZaN73bD/7.png",
       name: "Outsiders Test Collection Avax Test",
       addrs: "0x9abf023631108ad4c246b00ef042e3b5a980c851",
     },
@@ -48,7 +48,6 @@ export const networkCollections = {
       name: "Our NFT Factory",
       addrs: "0x55c30B939AEDe26401e4169973469bc06cc7F42a",
     }
-
   ],
 
   "0x1": [

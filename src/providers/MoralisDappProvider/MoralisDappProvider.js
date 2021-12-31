@@ -200,7 +200,7 @@ function MoralisDappProvider({ children }) {
     //const [marketAddress, setMarketAddress] = useState("0xF13AbF133559069671aA7A53efD748c4745376B8"); //ganache  
   const [marketAddress, setMarketAddress] = useState("0xAd1d1530525d1427cEDEE538132E93b231512c02"); //Smart Contract Address Here
   //const [marketAddress, setMarketAddress] = useState("0x340aCD7813C45981E3E9a32133b9a9D24FF3a53F"); //Mumbai testnet
-  const [mintAddress, setMintAddress] = useState("");
+
   
  
   useEffect(() => {

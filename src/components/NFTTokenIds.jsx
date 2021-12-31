@@ -50,7 +50,7 @@ const styles = {
     border: "solid 4px white",
   },
   text: {
-    color: "#041836",
+    color: "#808080",
     fontSize: "27px",
     fontWeight: "bold",
   },
@@ -182,8 +182,6 @@ function NFTTokenIds({ inputValue, setInputValue }) {
         e.confirmed === true
         
     );
-    console.log(fetchMarketItems);
-    console.log(result);
     return result;
    
   };
@@ -264,6 +262,7 @@ function NFTTokenIds({ inputValue, setInputValue }) {
                 key={index}
               >
                 <Meta title={nft.name} />
+                <Meta description={nft.description} />
               </Card>
             ))}
 

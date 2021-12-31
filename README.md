@@ -109,3 +109,11 @@ To Mint Test NFTs for this project i have made a minting dapp on the Fuji Testne
 https://rebelcrypto.nl/cryptodevsavax/
 
 video https://www.youtube.com/watch?v=WZWCzsB1xUE
+
+CreateNFT added to the repo
+add image and description
+uploads to ipfs , returns uri
+mints using factory contract adds uri when createToken.
+
+
+

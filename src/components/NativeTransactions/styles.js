@@ -19,6 +19,7 @@ const styles = {
     borderCollapse: "collapse",
     maxWidth: "100%",
   },
+
 };
 
 export default styles;
