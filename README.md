@@ -21,10 +21,11 @@ npm install
 Rename .env-example to .env and update the details inside with your server details
 
 
-(you can run mine for dev..
+you can run mine for dev..
+
 REACT_APP_MORALIS_APPLICATION_ID = UY7iyzpNW6GKGVOYUnki9DnEa3Ddd5L5O6S2jqN5
+
 REACT_APP_MORALIS_SERVER_URL = https://ylmq1gdhcprg.usemoralis.com:2053/server
-)
 
 
 Run Development server:
