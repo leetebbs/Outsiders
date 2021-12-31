@@ -7,7 +7,7 @@ function Home() {
         <>
         <Layout>
                 <Card>
-                    <img src="https://www.itespresso.es/wp-content/uploads/2021/06/NFT.png"/>
+                    <img src="https://www.itespresso.es/wp-content/uploads/2021/06/NFT.png" height = "1000px"/>
                 </Card>
        </Layout>
         </>
