@@ -104,6 +104,7 @@ function CreateNFT() {
         flexWrap: "wrap",
         justifyContent: "center",
         alignItems: "center",
+        
       }}
     >
       <Card

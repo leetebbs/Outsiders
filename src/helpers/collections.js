@@ -33,8 +33,26 @@ export const networkCollections = {
 
   ],
 
+  "0xa86a": [
+    //Avalanche
+    {
+      image:
+        "https://treedefi-nft-assets.s3.us-east-2.amazonaws.com/farmers/585.jpg",
+      name: "DeFi Farmers",
+      addrs: "0xc1c2E7E45212cCEc186e00AAa829Fc2891CAc808",
+    },
+
+  ],
+
   "0xa869": [
-    //Avalanche testnet
+    //Avalanche testnet 
+    {
+      image:
+        "https://gateway.ipfs.io/ipfs/QmRG7cGWQehPhBGYDLbJhJvRMaM3A3jXSRMeosEZaN73bD/7.png",
+      name: "Collection Avax Test",
+      addrs: "0x8a5ee557b866a893c729caccdb6588c31e25e7d9",
+    },
+
     {
       image:
         "https://gateway.ipfs.io/ipfs/QmRG7cGWQehPhBGYDLbJhJvRMaM3A3jXSRMeosEZaN73bD/7.png",
@@ -49,7 +67,7 @@ export const networkCollections = {
       addrs: "0x55c30B939AEDe26401e4169973469bc06cc7F42a",
     }
   ],
-
+  
   "0x1": [
     {
       image:

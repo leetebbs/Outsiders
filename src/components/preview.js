@@ -36,6 +36,7 @@ const Preview = () => {
               id="file"
 
             />
+            
             <button onClick={removeSelectedImage} style={styles.delete}>
               Remove This Image
             </button>
@@ -67,7 +68,7 @@ const styles = {
   delete: {
     cursor: "pointer",
     padding: 15,
-    background: "red",
+    background: "teal",
     color: "white",
     border: "none",
   },
