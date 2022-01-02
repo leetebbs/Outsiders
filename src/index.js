@@ -25,7 +25,6 @@ const Application = () => {
   else {
     return (
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <h1></h1>
       </div>
     
     );

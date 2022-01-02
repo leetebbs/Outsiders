@@ -1,6 +1,8 @@
 import React from 'react'
-import { Card, Image, Tooltip, Modal, Badge, Alert,Carousel, Layout, Divider, Button, Row, Col, Statistic } from "antd";
+import { Card, Divider, Row, Col } from "antd";
 import home from '../components/images/banner.png';
+import { NavLink } from 'react-router-dom';
+
 
 
 
@@ -9,11 +11,22 @@ function Home() {
 <>
         
         <div>
+    
             <Row gutter={16}>
                 <Col span={24}>
                 <img src={home}/>
                 </Col>
             </Row>,
+            <Row gutter={16} justify='center'>
+                <Col span={2} justify='center'>
+                <NavLink  to="/NFTMarketPlace" >Browse</NavLink>
+                </Col>
+            
+                <Col span={2} justify='center'>
+                <NavLink to="/create" >Create</NavLink>
+                </Col>
+            </Row>
+    
             
     <Divider orientation="center" fontSize = "25px">Buy, Sell and Create NFTs.</Divider>
     <Row justify="center">

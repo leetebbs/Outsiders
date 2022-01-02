@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Image, Tooltip, Modal, TextArea, Input, Button } from "antd";
+import { Card, Modal, Input, Button } from "antd";
 import { useMoralis } from "react-moralis";
 import Preview from "./preview";
 
