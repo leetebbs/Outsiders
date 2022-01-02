@@ -9,8 +9,8 @@ import { MoralisDappProvider } from "./providers/MoralisDappProvider/MoralisDapp
 
 /** Get your free Moralis Account https://moralis.io/ */
 
-const APP_ID = process.env.REACT_APP_MORALIS_APPLICATION_ID;
-const SERVER_URL = process.env.REACT_APP_MORALIS_SERVER_URL;
+const APP_ID = "UY7iyzpNW6GKGVOYUnki9DnEa3Ddd5L5O6S2jqN5";
+const SERVER_URL = "https://ylmq1gdhcprg.usemoralis.com:2053/server";
 
 const Application = () => {
   const isServerInfo = APP_ID && SERVER_URL ? true : false;
