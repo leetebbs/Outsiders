@@ -23,7 +23,7 @@ import Home from "components/Home";
 import background from "../src/components/images/blueback.png";
 import logo from 'components/images/Logo.png'
 const { Header, Footer } = Layout;
-//document.body.style.backgroundColor = "#57dcf9";
+document.body.style.backgroundColor = "#57dcf9";
 
 const styles = {
   content: {
