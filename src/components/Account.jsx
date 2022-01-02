@@ -33,7 +33,7 @@ function Account() {
     return (
       <div
         style={styles.account}
-        onClick={() => authenticate({ signingMessage: "Outsiders Team NFT Marketplace!" })}
+        onClick={() => authenticate({ signingMessage: "NFTX Marketplace Authentication! " })}
       >
         <p style={styles.text}>Connect</p>
       </div>

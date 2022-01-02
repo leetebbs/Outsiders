@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { MoralisProvider } from "react-moralis";
 import "./index.css";
-import QuickStart from "components/QuickStart";
+
 import { MoralisDappProvider } from "./providers/MoralisDappProvider/MoralisDappProvider";
 
 
@@ -25,7 +25,7 @@ const Application = () => {
   else {
     return (
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <QuickStart />
+        <h1></h1>
       </div>
     
     );

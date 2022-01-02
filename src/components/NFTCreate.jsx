@@ -51,7 +51,7 @@ function CreateNFT() {
       
     });
     const metadataURI = metadataFile.ipfs();
-    console.log(metadataURI);
+    console.log("MetadataURI ",metadataURI);
 
     // minting
     await mintToken(metadataURI).then((result) => {

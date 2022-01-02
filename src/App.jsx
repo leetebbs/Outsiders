@@ -152,10 +152,12 @@ const App = ({ isServerInfo }) => {
   );
 };
 
-export const Logo = () => (
+export const Logo = () => ( 
+
   <div style={{ display: "flex" }}>
-    <img src={logo}/>
+    <img  src={logo}/>
   </div>
+  
 );
 
 export default App;

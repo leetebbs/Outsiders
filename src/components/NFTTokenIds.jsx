@@ -88,6 +88,7 @@ function NFTTokenIds({ inputValue, setInputValue }) {
   const NFTCollections = getCollectionsByChain(chainId);
 
 
+
   async function purchase() {
     let newitems= fetchMarketItems[0];
     console.log(walletAddress);
