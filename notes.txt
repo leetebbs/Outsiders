@@ -10,3 +10,21 @@ changed explore market page from displaying 10 images to "".
                 </Card>
        </Layout>
         </>
+
+
+        to get the address's of the users nfts that we havent listed in our collections.js file.?
+        poss: add to a moralis database all of the collections in collections.js and keep appending as we discover new addresses, but will
+        have to check if it has already been added.
+
+
+        create a Lazy minting contract instead of a normal minting contract. to attract more users and creators.
+        https://nftschool.dev/tutorial/lazy-minting/
+
+
+        other markets
+        https://enjinx.io
+
+
+
+        a mint engine on all networks:
+        depoly a contract to all networks and depending on which is used it will mint on that network.

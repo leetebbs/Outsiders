@@ -31,12 +31,14 @@ export const useNFTTokenIds = (addr) => {
         if (NFT?.metadata) {
           NFT.metadata = JSON.parse(NFT.metadata);
           NFT.image = resolveLink(NFT.metadata?.image);
+          NFT.Description = resolveLink(NFT.metadata?.description);
         } else if (NFT?.token_uri) {
           try {
             await fetch(NFT.token_uri)
               .then((response) => response.json())
               .then((data) => {
                 NFT.image = resolveLink(data.image);
+                NFT.description = resolveLink(data.description);
               });
           } catch (error) {
             setFetchSuccess(false);

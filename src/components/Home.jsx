@@ -5,7 +5,6 @@ import { NavLink } from 'react-router-dom';
 
 
 
-
 function Home() {
     return (
 <>
@@ -19,7 +18,7 @@ function Home() {
             </Row>,
             <Row gutter={16} justify='center'>
                 <Col span={2} justify='center'>
-                <NavLink  to="/NFTMarketPlace" >Browse</NavLink>
+                <NavLink id="browse-nav"  to="/NFTMarketPlace" >Browse</NavLink>
                 </Col>
             
                 <Col span={2} justify='center'>

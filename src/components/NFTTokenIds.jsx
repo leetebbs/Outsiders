@@ -16,6 +16,7 @@ import {
 import { useMoralisDapp } from "providers/MoralisDappProvider/MoralisDappProvider";
 import { getExplorer } from "helpers/networks";
 import { useWeb3ExecuteFunction } from "react-moralis";
+import { useNFTBalance } from "hooks/useNFTBalance";
 const { Meta } = Card;
 
 const styles = {
@@ -86,8 +87,6 @@ function NFTTokenIds({ inputValue, setInputValue }) {
   );
   const purchaseItemFunction = "createMarketSale";
   const NFTCollections = getCollectionsByChain(chainId);
-
-
 
   async function purchase() {
     let newitems= fetchMarketItems[0];
@@ -263,7 +262,7 @@ function NFTTokenIds({ inputValue, setInputValue }) {
                 key={index}
               >
                 <Meta title={nft.name} />
-                <Meta description={nft.description} />
+                <Meta description={nft.Description} />
               </Card>
             ))}
 
@@ -304,8 +303,8 @@ function NFTTokenIds({ inputValue, setInputValue }) {
                 {getMarketItem(nft) && (
                   <Badge.Ribbon text="Buy Now" color="green"></Badge.Ribbon>
                 )}
-                <Meta title={nft.name} description={`#${nft.token_id}`} />
-                <Meta description="This is the description" />
+                <Meta title={nft.name} description={` ${nft.Description}`} />
+                
               </Card>
             ))}
         </div>

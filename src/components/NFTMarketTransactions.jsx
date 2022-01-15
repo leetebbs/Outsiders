@@ -12,6 +12,8 @@ const styles = {
   },
 };
 
+
+
 function NFTMarketTransactions() {
   const { walletAddress } = useMoralisDapp();
   const { Moralis } = useMoralis();

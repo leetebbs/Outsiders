@@ -25,6 +25,7 @@ export const useNFTBalance = (options) => {
         if (NFT?.metadata) {
           NFT.metadata = JSON.parse(NFT.metadata);
           NFT.image = resolveLink(NFT.metadata?.image);
+          NFT.Description = resolveLink(NFT.metadata?.description);
         } else if (NFT?.token_uri) {
           try {
             await fetch(NFT.token_uri)

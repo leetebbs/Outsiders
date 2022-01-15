@@ -20,7 +20,7 @@ const styles = {
 function CreateNFT() {
   const { Moralis, web3 } = useMoralis();
   let nftContractAddress = "0x55c30B939AEDe26401e4169973469bc06cc7F42a"; // avax testnet address
-  const minting = async () => {
+  const minting = async () => { 
     // Storing the file
 
     const fileInput = document.getElementById("file");
@@ -138,7 +138,6 @@ function CreateNFT() {
           name="metadataDescription"
           id="metadataDescription"
         />
-        <br />
         <br />
         <Preview />
         <br />
